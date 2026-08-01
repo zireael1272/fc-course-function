@@ -8,8 +8,8 @@ function isWorkingAgePerson(age) {
 
 const age = Number(prompt("Enter your age: "));
 
-if (isWorkingAgePerson()) {
-  console.log("Verificated");
+if (isWorkingAgePerson(age)) {
+  console.log(`${age} is verificated working age`);
 } else {
-  console.log("Don`t verificated");
+  console.log(`${age} is not verificated working age`);
 }
