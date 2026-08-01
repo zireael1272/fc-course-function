@@ -17,6 +17,14 @@ if (isWorkingAgePerson(age)) {
 console.log("==================================================");
 
 // 2. Перевірка кратності чисел
+
+/**
+ * Перевіряє, чи ділиться перше число на друге без остачі.
+ * @param {number} number1 - Ділене.
+ * @param {number} number2 - Дільник.
+ * @returns {boolean} true, якщо ділення відбулося без остачі.
+ */
+
 function checkMultiplicity(number1, number2) {
   if (number1 % number2 === 0) {
     return true;
@@ -36,6 +44,15 @@ if (checkMultiplicity(number1, number2)) {
 console.log("==================================================");
 
 // 3. Реконструкція парку: Розрахунок матеріалів.
+
+/**
+ * Обчислює площу поверхні куба або циліндра.
+ * @param {string} shapeType - Тип фігури: "cube" або "cylinder".
+ * @param {number} param1 - Для куба: довжина ребра, для циліндра: радіус.
+ * @param {number} param2 - Для циліндра: висота.
+ * @returns {number} Площа поверхні або 0, якщо введені дані некоректні.
+ */
+
 const areaCube = function calculateCubeArea(param1) {
   return Math.pow(6 * param1, 2);
 };
