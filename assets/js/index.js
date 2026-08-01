@@ -13,3 +13,22 @@ if (isWorkingAgePerson(age)) {
 } else {
   console.log(`${age} is not verificated working age`);
 }
+
+console.log("==================================================");
+
+// 2. Перевірка кратності чисел
+function checkMultiplicity(number1, number2) {
+  if (number1 % number2 === 0) {
+    return true;
+  }
+  return false;
+}
+
+const number1 = Number(prompt("Enter first number: "));
+const number2 = Number(prompt("Enter second number: "));
+
+if (checkMultiplicity(number1, number2)) {
+  console.log(`${number1} is divided ${number2}`);
+} else {
+  console.log(`${number1} is not divided ${number2}`);
+}
