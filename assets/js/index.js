@@ -80,3 +80,11 @@ if (area === 0) {
 } else {
   console.log("S = ", area);
 }
+
+const calculatePaintBoxes = function (area, layersCount = 1) {
+  return Math.ceil(area * layersCount * 0.1);
+};
+
+const layersCount = +prompt("Enter layer count:");
+const paintBoxes = calculatePaintBoxes(area, layersCount);
+console.log("Right amount paint =", paintBoxes);
