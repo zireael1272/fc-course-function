@@ -48,7 +48,7 @@ console.log("==================================================");
  */
 
 const calculateCubeArea = function (param1) {
-  return Math.pow(6 * param1, 2);
+  return 6 * Math.pow(param1, 2);
 };
 
 const calculateCylinderArea = function (param1, param2) {
