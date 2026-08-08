@@ -47,15 +47,15 @@ console.log("==================================================");
  * @returns {number} Площа поверхні або 0, якщо введені дані некоректні.
  */
 
-const areaCube = function calculateCubeArea(param1) {
+const calculateCubeArea = function (param1) {
   return Math.pow(6 * param1, 2);
 };
 
-const areaCylinder = function calculateCylinderArea(param1, param2) {
+const calculateCylinderArea = function (param1, param2) {
   return 2 * 3.14 * param1 * (param1 + param2);
 };
 
-const S = function calculateSurfaceArea(shapeType, param1, param2) {
+const calculateSurfaceArea = function (shapeType, param1, param2) {
   const shapeTypeLower = shapeType.toLowerCase();
   if (
     (shapeTypeLower !== "cube" && shapeTypeLower !== "cylinder") ||
@@ -65,15 +65,15 @@ const S = function calculateSurfaceArea(shapeType, param1, param2) {
     return 0;
   }
   if (shapeTypeLower === "cube") {
-    return areaCube(param1);
+    return calculateCubeArea(param1);
   }
-  return areaCylinder(param1, param2).toFixed(1);
+  return calculateCylinderArea(param1, param2).toFixed(1);
 };
 
 const shapeType = prompt("Enter shape type:");
 const param1 = prompt("Enter first number:");
 const param2 = prompt("Enter second number:");
-const area = S(shapeType, param1, param2);
+const area = calculateSurfaceArea(shapeType, param1, param2);
 
 if (area === 0) {
   console.log("Incorrect entered data");
