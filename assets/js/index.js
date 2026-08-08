@@ -1,9 +1,6 @@
 //  1. Перевірка працездатного віку
 function isWorkingAgePerson(age) {
-  if (age >= 16 && age <= 64) {
-    return true;
-  }
-  return false;
+  return age >= 16 && age <= 64;
 }
 
 const age = Number(prompt("Enter your age: "));
@@ -26,10 +23,7 @@ console.log("==================================================");
  */
 
 function checkMultiplicity(number1, number2) {
-  if (number1 % number2 === 0) {
-    return true;
-  }
-  return false;
+  return number1 % number2 === 0;
 }
 
 const number1 = Number(prompt("Enter first number: "));
