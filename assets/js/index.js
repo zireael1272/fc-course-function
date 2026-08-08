@@ -69,11 +69,11 @@ const S = function calculateSurfaceArea(shapeType, param1, param2) {
     param2 < 0
   ) {
     return 0;
-  } else if (shapeTypeLower === "cube") {
-    return areaCube(param1);
-  } else {
-    return areaCylinder(param1, param2).toFixed(1);
   }
+  if (shapeTypeLower === "cube") {
+    return areaCube(param1);
+  }
+  return areaCylinder(param1, param2).toFixed(1);
 };
 
 const shapeType = prompt("Enter shape type:");
