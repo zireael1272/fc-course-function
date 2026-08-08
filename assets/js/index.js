@@ -52,7 +52,7 @@ const calculateCubeArea = function (param1) {
 };
 
 const calculateCylinderArea = function (param1, param2) {
-  return 2 * 3.14 * param1 * (param1 + param2);
+  return 2 * Math.PI * param1 * (param1 + param2);
 };
 
 const calculateSurfaceArea = function (shapeType, param1, param2) {
